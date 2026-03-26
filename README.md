@@ -2,6 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/p-square.svg)](https://crates.io/crates/p-square)
 [![Documentation](https://docs.rs/p-square/badge.svg)](https://docs.rs/p-square/)
+[![Tests](https://github.com/rotmh/p-square/actions/workflows/rust.yml/badge.svg)](https://github.com/rotmh/p-square/actions/workflows/rust.yml)
 
 The P-Square (P2) algorithm for dynamic calculation of quantiles without storing observations.
 
