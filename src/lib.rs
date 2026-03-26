@@ -1,5 +1,5 @@
 //! The P-Square (P2) algorithm for dynamic calculation of quantiles without
-//! storing observatios.
+//! storing observations.
 //!
 //! An implementation based on the algorithm described in this [paper].
 //!
