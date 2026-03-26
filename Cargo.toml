@@ -2,5 +2,14 @@
 name = "p-square"
 version = "0.1.0"
 edition = "2024"
+include = ["/src", "/README.md"]
+description = "The P-Square (P2) algorithm for dynamic calculation of quantiles without storing observations"
+license = "MIT"
+homepage = "https://github.com/rotmh/p-square"
+repository = "https://github.com/rotmh/p-square"
+readme = "README.md"
+authors = ["Rotem Horesh (rotmh)"]
+categories = ["algorithms"]
+keywords = ["p-square", "p2", "psqr"]
 
 [dependencies]
