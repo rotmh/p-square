@@ -9,7 +9,7 @@
 //! # Examples
 //!
 //! ```
-//! # use tamlil_dsa::p2::P2;
+//! # use p_square::P2;
 //! #
 //! let mut p2 = P2::new(0.3);
 //!
@@ -24,6 +24,7 @@
 
 const MARKERS_COUNT: usize = 5;
 
+/// Marker indices for `q`.
 mod marker_index {
     /// Minimum of the observations so far.
     pub(super) const MINIMUM: usize = 0;
@@ -57,9 +58,20 @@ impl P2 {
     /// Construct a new P2 state for estimating the `quantile` of the
     /// observations.
     ///
+    /// See the [crate](crate) documentation for more.
+    ///
     /// # Panics
     ///
     /// Will panic if `quantile` is not in the range `0.0..=1.0`.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use p_square::P2;
+    ///
+    /// // A P-Square state to estimate a median.
+    /// let mut p2 = P2::new(0.5);
+    /// ```
     pub const fn new(quantile: f64) -> Self {
         assert!(
             0.0 <= quantile && quantile <= 1.0,
